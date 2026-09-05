@@ -479,71 +479,38 @@ An event can therefore reach the SIEM even when it does not generate a visible d
 ## Repository Structure
 
 
-
 ```text
-
 vetclinic-soc-investigation-lab/
-
-â”œâ”€â”€ README.md
-
-â”œâ”€â”€ detections/
-
-â”‚   â”œâ”€â”€ sysmon-vetclinic.xml
-
-â”‚   â””â”€â”€ vetclinic_soc_rules.xml
-
-â”œâ”€â”€ docs/
-
-â”‚   â””â”€â”€ incident-investigation-report.md
-
-â”œâ”€â”€ evidence/
-
-â”‚   â”œâ”€â”€ account-created-4720-local.txt
-
-â”‚   â”œâ”€â”€ account-deleted-4726-local.txt
-
-â”‚   â”œâ”€â”€ failed-logon-4625-local.txt
-
-â”‚   â”œâ”€â”€ powershell-4104-local-verification.txt
-
-â”‚   â”œâ”€â”€ powershell-base64-test.txt
-
-â”‚   â”œâ”€â”€ repeated-failed-logons-local.txt
-
-â”‚   â”œâ”€â”€ sysmon-event1-process-test.txt
-
-â”‚   â”œâ”€â”€ sysmon-event3-archive-sample.json
-
-â”‚   â””â”€â”€ additional verification files
-
-â””â”€â”€ screenshots/
-
-    â”œâ”€â”€ 01-sysmon-installed-running.png
-
-    â”œâ”€â”€ 02-wazuh-sysmon-collection-configured.png
-
-    â”œâ”€â”€ 03-sysmon-threat-hunting-dashboard.png
-
-    â”œâ”€â”€ 04-sysmon-pipeline-test-event.png
-
-    â”œâ”€â”€ 05-powershell-4104-events.png
-
-    â”œâ”€â”€ 06-powershell-base64-custom-detection.png
-
-    â”œâ”€â”€ 07a-failed-logon-user-details.png
-
-    â”œâ”€â”€ 07b-failed-logon-rule-details.png
-
-    â”œâ”€â”€ 08-repeated-failed-logon-custom-alert.png
-
-    â”œâ”€â”€ 09a-account-created-event-details.png
-
-    â”œâ”€â”€ 09b-account-created-rule-details.png
-
-    â”œâ”€â”€ 10a-account-deleted-event-details.png
-
-    â””â”€â”€ 10b-account-deleted-rule-details.png
-
+|-- README.md
+|-- detections/
+|   |-- sysmon-vetclinic.xml
+|   `-- vetclinic_soc_rules.xml
+|-- docs/
+|   `-- incident-investigation-report.md
+|-- evidence/
+|   |-- account-created-4720-local.txt
+|   |-- account-deleted-4726-local.txt
+|   |-- failed-logon-4625-local.txt
+|   |-- powershell-4104-local-verification.txt
+|   |-- powershell-base64-test.txt
+|   |-- repeated-failed-logons-local.txt
+|   |-- sysmon-event1-process-test.txt
+|   |-- sysmon-event3-archive-sample.json
+|   `-- additional verification files
+`-- screenshots/
+    |-- 01-sysmon-installed-running.png
+    |-- 02-wazuh-sysmon-collection-configured.png
+    |-- 03-sysmon-threat-hunting-dashboard.png
+    |-- 04-sysmon-pipeline-test-event.png
+    |-- 05-powershell-4104-events.png
+    |-- 06-powershell-base64-custom-detection.png
+    |-- 07a-failed-logon-user-details.png
+    |-- 07b-failed-logon-rule-details.png
+    |-- 08-repeated-failed-logon-custom-alert.png
+    |-- 09a-account-created-event-details.png
+    |-- 09b-account-created-rule-details.png
+    |-- 10a-account-deleted-event-details.png
+    `-- 10b-account-deleted-rule-details.png
 ```
 
 
