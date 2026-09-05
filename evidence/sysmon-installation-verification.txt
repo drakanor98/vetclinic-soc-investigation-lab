@@ -1,0 +1,23 @@
+SYSMON SERVICE
+
+Name     DisplayName  Status StartType
+----     -----------  ------ ---------
+Sysmon64 Sysmon64    Running Automatic
+
+
+
+RECENT SYSMON EVENTS
+
+TimeCreated         Id LevelDisplayName
+-----------         -- ----------------
+02/09/2026 12:52:09 12 Information     
+02/09/2026 12:52:08 11 Information     
+02/09/2026 12:52:08 11 Information     
+02/09/2026 12:52:08  1 Information     
+02/09/2026 12:52:08 11 Information     
+02/09/2026 12:52:08 11 Information     
+02/09/2026 12:52:08  1 Information     
+02/09/2026 12:52:00  5 Information     
+
+
+

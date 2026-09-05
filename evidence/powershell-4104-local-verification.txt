@@ -1,0 +1,13 @@
+Result: PASS
+Time created: 09/02/2026 14:47:53
+Event ID: 4104
+Provider: Microsoft-Windows-PowerShell
+Marker: VETCLINIC-PS-4104-20260902-144752
+Test file: C:\VetClinic-Lab\PowerShell-Audit-Test.txt
+
+Event message:
+Creating Scriptblock text (1 of 1):
+Set-Content -LiteralPath 'C:\VetClinic-Lab\PowerShell-Audit-Test.txt' -Value 'VETCLINIC-PS-4104-20260902-144752'
+
+ScriptBlock ID: 6ee470e8-0af1-45dd-b6a2-5e74b370ff58
+Path: 

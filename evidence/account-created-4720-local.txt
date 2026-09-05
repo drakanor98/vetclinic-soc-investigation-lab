@@ -1,0 +1,45 @@
+Result: PASS
+Account: VCSOC-AUDIT
+Account enabled: False
+Event ID: 4720
+Time created: 09/03/2026 10:29:59
+
+Event message:
+A user account was created.
+
+Subject:
+	Security ID:		S-1-5-21-1529878808-3852635608-3853095114-1001
+	Account Name:		USER
+	Account Domain:		DESKTOP-GEDBDUH
+	Logon ID:		0xBD025B
+
+New Account:
+	Security ID:		S-1-5-21-1529878808-3852635608-3853095114-1002
+	Account Name:		VCSOC-AUDIT
+	Account Domain:		DESKTOP-GEDBDUH
+
+Attributes:
+	SAM Account Name:	VCSOC-AUDIT
+	Display Name:		<value not set>
+	User Principal Name:	-
+	Home Directory:		<value not set>
+	Home Drive:		<value not set>
+	Script Path:		<value not set>
+	Profile Path:		<value not set>
+	User Workstations:	<value not set>
+	Password Last Set:	<never>
+	Account Expires:		<never>
+	Primary Group ID:	513
+	Allowed To Delegate To:	-
+	Old UAC Value:		0x0
+	New UAC Value:		0x15
+	User Account Control:	
+		Account Disabled
+		'Password Not Required' - Enabled
+		'Normal Account' - Enabled
+	User Parameters:	<value not set>
+	SID History:		-
+	Logon Hours:		All
+
+Additional Information:
+	Privileges		-

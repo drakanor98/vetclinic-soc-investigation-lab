@@ -1,0 +1,48 @@
+﻿<Sysmon schemaversion="4.82">
+  <HashAlgorithms>SHA256</HashAlgorithms>
+  <CheckRevocation>true</CheckRevocation>
+  <DnsLookup>true</DnsLookup>
+
+  <EventFiltering>
+
+    <!-- Event ID 1: Record process creation while excluding common console noise -->
+    <ProcessCreate onmatch="exclude">
+      <Image condition="end with">\conhost.exe</Image>
+    </ProcessCreate>
+
+    <!-- Event ID 3: Record network connections from high-interest programs -->
+    <NetworkConnect onmatch="include">
+      <Image condition="end with">\powershell.exe</Image>
+      <Image condition="end with">\pwsh.exe</Image>
+      <Image condition="end with">\cmd.exe</Image>
+      <Image condition="end with">\curl.exe</Image>
+      <Image condition="end with">\certutil.exe</Image>
+      <Image condition="end with">\mshta.exe</Image>
+      <Image condition="end with">\rundll32.exe</Image>
+      <Image condition="end with">\wscript.exe</Image>
+      <Image condition="end with">\cscript.exe</Image>
+    </NetworkConnect>
+
+    <!-- Event ID 11: Monitor important file-creation locations -->
+    <FileCreate onmatch="include">
+      <TargetFilename condition="begin with">C:\VetClinic-Lab\</TargetFilename>
+      <TargetFilename condition="contains">\Downloads\</TargetFilename>
+      <TargetFilename condition="contains">\AppData\Local\Temp\</TargetFilename>
+      <TargetFilename condition="contains">\Start Menu\Programs\Startup\</TargetFilename>
+    </FileCreate>
+
+    <!-- Event IDs 12-14: Monitor common persistence registry locations -->
+    <RegistryEvent onmatch="include">
+      <TargetObject condition="contains">\CurrentVersion\Run</TargetObject>
+      <TargetObject condition="contains">\CurrentVersion\RunOnce</TargetObject>
+    </RegistryEvent>
+
+    <!-- Event ID 22: Record DNS queries from command interpreters -->
+    <DnsQuery onmatch="include">
+      <Image condition="end with">\powershell.exe</Image>
+      <Image condition="end with">\pwsh.exe</Image>
+      <Image condition="end with">\cmd.exe</Image>
+    </DnsQuery>
+
+  </EventFiltering>
+</Sysmon>

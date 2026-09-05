@@ -1,0 +1,15 @@
+Result: PASS
+Time created: 09/02/2026 15:28:18
+Event ID: 4104
+Marker: VETCLINIC-B64-20260902-152818
+Encoded value: VkVUQ0xJTklDLUI2NC0yMDI2MDkwMi0xNTI4MTg=
+
+Event message:
+Creating Scriptblock text (1 of 1):
+
+$decoded = [Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('VkVUQ0xJTklDLUI2NC0yMDI2MDkwMi0xNTI4MTg='))
+Write-Output $decoded
+
+
+ScriptBlock ID: 8b797775-a0f5-41ea-8d45-86264800e52c
+Path: 

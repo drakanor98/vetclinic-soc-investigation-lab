@@ -1,0 +1,24 @@
+Process Create:
+RuleName: -
+UtcTime: 2026-09-03 13:55:45.006
+ProcessGuid: {fe814d5d-7c61-6a99-df0b-000000002500}
+ProcessId: 24104
+Image: C:\Windows\System32\cmd.exe
+FileVersion: 10.0.22621.3672 (WinBuild.160101.0800)
+Description: Windows Command Processor
+Product: Microsoft® Windows® Operating System
+Company: Microsoft Corporation
+OriginalFileName: Cmd.Exe
+CommandLine: "C:\Windows\system32\cmd.exe" /c echo VETCLINIC-SYSMON-PROC-20260903-145544 > "C:\VetClinic-Lab\Sysmon-Process-Test.txt" 
+CurrentDirectory: C:\VetClinic-Lab\Portfolio\vetclinic-soc-investigation-lab\
+User: DESKTOP-GEDBDUH\USER
+LogonGuid: {fe814d5d-3485-6a99-5b02-bd0000000000}
+LogonId: 0xBD025B
+TerminalSessionId: 2
+IntegrityLevel: High
+Hashes: SHA256=3F6AA206177BEBB29FC534C587A246E0F395941640F3F266C80743AF95A02150
+ParentProcessGuid: {fe814d5d-7b7e-6a99-a60b-000000002500}
+ParentProcessId: 17028
+ParentImage: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ParentCommandLine: "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" 
+ParentUser: DESKTOP-GEDBDUH\USER

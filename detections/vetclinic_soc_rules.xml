@@ -1,0 +1,23 @@
+﻿<group name="vetclinic_soc,">
+
+  <!-- PowerShell Base64 decoding detection -->
+  <rule id="100210" level="12">
+    <if_sid>91809</if_sid>
+    <description>VetClinic SOC: PowerShell Base64 decoding activity detected.</description>
+    <mitre>
+      <id>T1059.001</id>
+      <id>T1140</id>
+    </mitre>
+  </rule>
+
+  <!-- Repeated failed Windows logon correlation -->
+  <rule id="100220" level="12" frequency="5" timeframe="60">
+    <if_matched_sid>60122</if_matched_sid>
+    <same_field>win.eventdata.targetUserName</same_field>
+    <description>VetClinic SOC: Multiple failed Windows logons detected for the same account within 60 seconds.</description>
+    <mitre>
+      <id>T1110.001</id>
+    </mitre>
+  </rule>
+
+</group>

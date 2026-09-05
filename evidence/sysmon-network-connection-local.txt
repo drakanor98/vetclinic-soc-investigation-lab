@@ -1,0 +1,14 @@
+
+
+Result              : PASS
+TcpConnection       : True
+SysmonEventID       : 3
+Process             : C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+DestinationIP       : 172.29.27.48
+DestinationPort     : 443
+DestinationHostname : vetclinic-wazuh.mshome.net
+TimeCreated         : 03/09/2026 11:00:28
+
+
+
+
