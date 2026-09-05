@@ -186,9 +186,9 @@ Wazuh's existing PowerShell detection identified the activity, after which a cus
 
 
 
-- `T1059.001` â€” PowerShell
+- `T1059.001` - PowerShell
 
-- `T1140` â€” Deobfuscate/Decode Files or Information
+- `T1140` - Deobfuscate/Decode Files or Information
 
 
 
@@ -248,7 +248,7 @@ A custom Wazuh correlation rule was created to identify repeated failures occurr
 
 
 
-- `T1110.001` â€” Password Guessing
+- `T1110.001` - Password Guessing
 
 
 
@@ -284,7 +284,7 @@ The activity was mapped to:
 
 
 
-**MITRE ATT&CK `T1098` â€” Account Manipulation**
+**MITRE ATT&CK `T1098` - Account Manipulation**
 
 
 
@@ -392,7 +392,7 @@ One useful troubleshooting lesson from this test was that security telemetry pas
 
 ```text
 
-Endpoint â†’ Agent â†’ Decoder â†’ Archive â†’ Rule â†’ Alert â†’ Dashboard
+Endpoint -> Agent -> Decoder -> Archive -> Rule -> Alert -> Dashboard
 
 ```
 
